@@ -1,0 +1,83 @@
+{
+    "name": "design-system",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "src/@types/globals.d.ts"
+    ],
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "storybook": "storybook dev -p 6006",
+        "build-storybook": "storybook build",
+        "rollup": "rollup -c"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@emotion/react": "^11.10.6",
+        "@emotion/styled": "^11.10.6",
+        "@mui/icons-material": "^5.14.16",
+        "@mui/lab": "^5.0.0-alpha.152",
+        "@mui/material": "^5.14.17",
+        "@rollup/plugin-commonjs": "^25.0.7",
+        "@rollup/plugin-image": "^3.0.3",
+        "@rollup/plugin-typescript": "^11.1.5",
+        "@storybook/addon-essentials": "^7.5.3",
+        "@storybook/addon-interactions": "^7.5.3",
+        "@storybook/addon-links": "^7.5.3",
+        "@storybook/addon-onboarding": "^1.0.8",
+        "@storybook/addon-styling": "^1.3.7",
+        "@storybook/blocks": "^7.5.3",
+        "@storybook/preset-create-react-app": "^7.5.3",
+        "@storybook/react": "^7.5.3",
+        "@storybook/react-webpack5": "^7.5.3",
+        "@storybook/testing-library": "^0.2.2",
+        "@testing-library/jest-dom": "^5.16.5",
+        "@testing-library/react": "^10.0.0",
+        "@testing-library/user-event": "^10.0.0",
+        "@types/react-css-modules": "^4.6.8",
+        "babel-plugin-named-exports-order": "^0.0.2",
+        "prop-types": "^15.8.1",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-scripts": "5.0.1",
+        "rollup": "^4.3.0",
+        "rollup-plugin-dts": "^6.1.0",
+        "storybook": "^7.5.3",
+        "styled-components": "^6.1.1",
+        "web-vitals": "^2.1.4",
+        "webpack": "^5.89.0"
+    },
+    "peerDependencies": {
+        "@mui/icons-material": "^5.14.16",
+        "@mui/lab": "^5.0.0-alpha.152",
+        "@mui/material": "^5.14.17",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "styled-components": "^6.1.1"
+    }
+}
