@@ -1,0 +1,120 @@
+{
+  "name": "design-system",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "storybook dev -p 6006",
+    "build": "parcel build",
+    "watch": "parcel watch",
+    "build-storybook": "storybook build",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@emotion/react": "11.10.6",
+    "@emotion/styled": "11.10.6",
+    "@parcel/packager-ts": "^2.10.2",
+    "@parcel/transformer-typescript-types": "^2.10.2",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-image": "^3.0.3",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-interactions": "^7.5.3",
+    "@storybook/addon-links": "^7.5.3",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/addon-styling": "^1.3.7",
+    "@storybook/blocks": "^7.5.3",
+    "@storybook/preset-create-react-app": "^7.5.3",
+    "@storybook/react": "^7.5.3",
+    "@storybook/react-webpack5": "^7.5.3",
+    "@storybook/testing-library": "^0.2.2",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "10.0.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.61",
+    "@types/react": "17.0.2",
+    "jest-styled-components": "^7.2.0",
+    "parcel": "^2.10.2",
+    "prop-types": "^15.8.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-scripts": "5.0.1",
+    "rollup": "^4.3.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "storybook": "^7.5.3",
+    "styled-components": "^6.1.1",
+    "typescript": "^4.9.5",
+    "webpack": "^5.89.0"
+  },
+  "dependencies": {
+    "styled-components": "^6.1.1"
+  },
+  "peerDependencies": {
+    "@mui/icons-material": "5.11.16",
+    "@mui/lab": "^5.0.0-alpha.152",
+    "@mui/material": "5.12.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^6.1.1"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "files": [
+    "dist",
+    "src/@types/globals.d.ts"
+  ],
+  "author": "",
+  "license": "ISC",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react",
+      [
+        "@babel/preset-typescript",
+        {
+          "isTSX": true,
+          "allExtensions": true
+        }
+      ],
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ],
+    "ignore": [
+      "**/*.test.tsx",
+      "**/*.test.ts",
+      "**/*.test.jsx",
+      "**/*.stories.tsx",
+      "**/*.stories.jsx"
+    ]
+  }
+}
